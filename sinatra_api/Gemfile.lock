@@ -1,8 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    csv (3.2.6)
     date (3.3.3)
+    json (2.6.3)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
     nokogiri (1.14.0-x86_64-darwin)
       racc (~> 1.4)
     open-uri (0.3.0)
@@ -10,13 +12,23 @@ GEM
       time
       uri
     racc (1.6.2)
+    rack (2.2.6.2)
+    rack-protection (3.0.5)
+      rack
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.7.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sinatra (3.0.5)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.5)
+      tilt (~> 2.0)
     stringio (3.0.4)
+    tilt (2.0.11)
     time (0.2.1)
       date
     uri (0.12.0)
@@ -26,10 +38,11 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
-  csv
+  json
   nokogiri
   open-uri
   selenium-webdriver (~> 4.4)
+  sinatra
 
 BUNDLED WITH
    2.4.3

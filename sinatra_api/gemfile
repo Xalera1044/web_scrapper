@@ -1,6 +1,7 @@
 source "https://rubygems.org/"
 
 gem 'selenium-webdriver', '~> 4.4'
-gem 'csv'
+gem 'json'
 gem 'nokogiri'
 gem 'open-uri'
+gem 'sinatra'
